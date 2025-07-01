@@ -1,0 +1,17 @@
+[package]
+name = "distributed-consensus-2025"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.83.0"
+authors = ["uzybzk"]
+description = "Modern distributed consensus algorithms implementation"
+
+[dependencies]
+tokio = { version = "1.35", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.6", features = ["v4", "serde"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+clap = { version = "4.4", features = ["derive"] }
+async-trait = "0.1"
